@@ -6,7 +6,7 @@
 }
 
 body{
-  background-color: wheat;
+  background-color: rgb(207, 188, 229);
 }
 
 .hero{
@@ -14,15 +14,41 @@ body{
   justify-content: center;
 }
 
+.links{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: -4rem;
+  margin-left: auto;
+  margin-right: 2.5rem; */
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  font-size: clamp(2rem, 3rem, 5rem);
+  color: white;
+  width: 100%;
+  justify-content: center;
+  align-content: start;
+  margin-bottom: auto;
+  margin-top: 1rem;
+}
+
+#github-logo{
+  grid-column-start: 9;
+}
+
+#github-logo, #linkedin-logo{
+  text-align: center;
+}
+
 .hero-image{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/keyboard.jpg);
-  width: clamp(70%, 85%, 90%);
-  min-height: 30rem;
+  width: clamp(80%, 90%, 95%);
+  min-height: 60vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  margin-top: 3rem;
+  margin-top: 2rem;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -30,14 +56,14 @@ body{
   align-items: center;
 }
 
-.hero-image h1, p{
+.hero-image h1, p, button{
   color: white;
   text-align: center;
   font-family: 'Saira Semi Condensed', sans-serif;
 }
 
 .hero-image h1{
-  font-size: 3rem;
+  font-size: clamp(3rem, 5rem, 6rem);
 }
 
 .hero-image p{
@@ -45,6 +71,21 @@ body{
 }
 
 .hero-image button{
-  width: 5rem;
-  height: 2.5rem;
+  /* width: 8rem;
+  height: 3rem; */
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: black;
+  border: solid white;
+  border-radius: 5px;
+  padding: 1rem 1.5rem;
+}
+
+.hero-image button:hover{
+cursor: pointer;
+transform: scale(1.05);
+border: solid white;
+color: rgba(255,255,255,.3);
+background: #1a1a1a;
+text-shadow: 0 0 15px rgba(255,255,255,.5), 0 0 10px rgba(255,255,255,.5);
 }
