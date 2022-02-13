@@ -19,6 +19,7 @@ body{
   display: grid;
   grid: center;
   align-content: center;
+  width: 100%;
 }
 
 /* Profile Links */
@@ -36,18 +37,19 @@ body{
   margin: 0;
 }
 
-.github, .linkedin:link{
+.github, .linkedin, .lni-github-original:link, .lni-linkedin-original:link{
 font-size: 3rem;
 color: white;
 }
-.github, .linkedin:visited{
+.github, .linkedin, .lni-github-original:visited, .lni-linkedin-original:visited{
   font-size: 3rem;
   color: white;
 }
-.github, .linkedin:hover{
+.github, .linkedin, .lni-github-original:hover, .lni-linkedin-original:hover{
 cursor: pointer;
+transform: scale(1.2);
 }
-.github, .linkedin:active{
+.github, .linkedin, .lni-github-original:active, .lni-linkedin-original:active{
   font-size: 3rem;
   color: white;
 }
@@ -86,3 +88,82 @@ cursor: pointer;
 
 
 /* About me section */
+
+.about-me{
+text-align: center;
+color: white;
+padding: 5rem 2rem;
+font-size: 3rem;
+width: 100%;
+}
+
+.about-me h2{
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.about-me p{
+  padding: 1rem;
+}
+
+
+/* Portfolio section */
+
+.portfolio{
+  background-color: black;
+  color: white;
+}
+.portfolio h2{
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: left;
+  display: block;
+}
+
+.portfolio-grid{
+  border: solid red;
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.portfolio-grid div{
+  min-height: 30vh;
+  width: 12rem;
+  border: blue solid;
+  margin: 0.2rem;
+  font-size: 20px;
+}
+
+
+/* Contact me section */
+
+.contact{
+  background-color: grey;
+}
+
+.contact h2{
+  padding: 2rem;
+  font-weight: bold;
+  font-size: 3rem;
+  text-align: left;
+  display: block;
+}
+.contact-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 10vh;
+}
+.contact-links{
+  display: flex;
+  flex-direction: column;
+}
+
+
