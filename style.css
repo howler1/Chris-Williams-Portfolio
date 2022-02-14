@@ -17,9 +17,12 @@ body{
   height: 80vh;
   background-size: cover;
   display: grid;
-  grid: center;
   align-content: center;
   width: 100%;
+}
+
+a{
+  text-decoration: none;
 }
 
 /* Profile Links */
@@ -124,7 +127,7 @@ width: 100%;
 
 .portfolio-grid{
   border: solid red;
-  margin: 1rem;
+  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,15 +137,17 @@ width: 100%;
 }
 
 .portfolio-grid div{
-  min-height: 30vh;
-  width: 12rem;
+  height: 30vh;
+  width: 11rem;
   border: blue solid;
-  margin: 0.2rem;
+  margin: 1rem 0.2rem;
   font-size: 20px;
 }
 
 
 /* Contact me section */
+
+    /* links */
 
 .contact{
   background-color: grey;
@@ -155,15 +160,84 @@ width: 100%;
   text-align: left;
   display: block;
 }
+
 .contact-flex{
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
   padding-bottom: 10vh;
 }
+
 .contact-links{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.contact-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-links div{
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.contact-links p{
+color: white;
+font-size: 2rem;
+padding: 1rem;
+text-align: left;
+}
+
+.contact-links a{
+padding: 1rem;
+}
+
+    /* form */
+
+.contact-form {
+  width: auto;
+  font-size: 2rem;
+  color: white;
   display: flex;
   flex-direction: column;
 }
 
+.contact-form label{
+  font-size: 2rem;
+}
 
+
+
+
+
+
+
+
+
+/* desktop view */
+@media screen and (min-width: 600px){
+    .portfolio-grid div{
+      width: 20rem;
+      min-height: 45vh;
+  }
+
+  .portfolio-grid{
+    margin: 0 5vw;
+  }
+
+  }
+
+  @media screen and (max-height: 450px){
+    .hero-text h1 {
+      padding: 2.5rem;
+    }
+
+    .hero-text p{
+      padding-bottom: 3rem;
+    }
+  }

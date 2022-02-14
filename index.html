@@ -34,7 +34,7 @@
   <!-- about me section -->
   <div class='about-me'>
     <h2>About Me</h2>
-    <p>I am currently training to be a front end web developer on a bootcamp course with Purple Beard.</p>
+    <p>I am currently studying to be a front end web developer on a bootcamp course with Purple Beard.</p>
     <p>I currently live in Essex, UK and am a mountain biker in my spare time.</p>
   </div>
 
@@ -67,12 +67,32 @@
   <div class='contact'>
     <h2>Contact Me</h2>
     <div class='contact-flex'>
+      <!-- Form -->
       <form class='contact-form' action="contact">
-        <p>large</p>
+        <label for="first-name">First Name</label>
+        <input type="text">
+
+        <label for="surname">Surname</label>
+        <input type="text">
+
+        <label for="email">Email</label>
+        <input type="email">
+
+        <label for="message">Message</label>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+
+        <button>Sumbit</button>
       </form>
+      <!-- Links -->
       <div class='contact-links'>
-        <a class='github' href="https://github.com/howler1" target='_blank'><i class="lni lni-github-original"></i></a>
-        <a class='linkedin' href="https://www.linkedin.com/in/chris-williams-6802671b4/" target='_blank'><i class="lni lni-linkedin-original"></i></a>
+        <div>
+          <a class='github' href="https://github.com/howler1" target='_blank'><i class="lni lni-github-original"></i></a>
+          <p>Github</p>
+        </div>
+        <div>
+          <a class='linkedin' href="https://www.linkedin.com/in/chris-williams-6802671b4/" target='_blank'><i class="lni lni-linkedin-original"></i></a>
+          <p>LinkedIn</p>
+        </div>
       </div>
     </div>
   </div>
